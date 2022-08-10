@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="src/input.css">
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/8ada2f4011.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-gradient-to-b from-fuchsia-300 to-fuchsia-500 h-screen">
+        
+        <h1 class="text-5xl text-white text-center pt-40">To-do List</h1>
+        <h2 class="text-base text-white text-center italic pt-6">A simple to-do list to manage your tasks and increase your productivity.</h2>
+    
+        <div class="my-32">
+            <form>
+                <div class="flex justify-center items-center">
+                <input class="w-72 h-10" type="text" name="todo" id="todo-field">
+                <button id="add-btn" class="bg-white mx-3 px-2 text-fuchsia-400 text-3xl pb-1 hover:bg-fuchsia-700 hover:text-white hover:-translate-y-1 transform transition" type="submit">+</button>
+            </form>
+        </div>
+
+        <div id="todo-container" class="todo-container block">
+            <ul id="todo-list" class="todo-list flex justify-center">
+                
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

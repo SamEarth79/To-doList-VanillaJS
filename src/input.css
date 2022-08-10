@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.todo li{
+    width: 15rem;
+    background-color: white;
+    padding: 2px;
+    height: 1.8em;
+}
+
+.todo button{
+    background-color: white;
+    padding: 2px 5px;
+    margin: 0 3px 0 12px;
+}
+
+.done-button{
+    background: rgb(96, 197, 96);
+}
