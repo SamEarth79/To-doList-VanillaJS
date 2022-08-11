@@ -2,27 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
+.todo-container{
+    margin-top: 4em;
+}
 
 .todo{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2em 0;
+    margin: 1em auto 0 auto;
+    width: 18em;
+    transition: all 0.5s ease;
+    /* border-radius: 20px; */
+    /* border: 1px black solid; */
 }
 
 .todo li{
-    width: 15rem;
+    width: 16rem;
     background-color: white;
-    padding: 2px;
-    height: 1.8em;
+    padding: 3px;
+    height: 2em;
+    /* border-radius: 20px; */
 }
 
 .todo button{
     background-color: white;
-    padding: 2px 5px;
-    margin: 0 3px 0 12px;
+    padding: 3px 10px;
+    height: 2em;    
+    /* margin: 0 3px 0 12px; */
 }
 
 .done-button{
-    background: rgb(96, 197, 96);
+    padding: 10em;
+    background-color: rgb(96, 197, 96);
+}
+
+.actions-div{
+    display: flex;
+}
+
+.actions-div button:nth-child(1):hover{
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-translate-y: -0.25rem/* -4px */;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    background-color: rgb(96, 197, 96);
+}
+
+.actions-div button:nth-child(2):hover{
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-translate-y: -0.25rem/* -4px */;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    background-color: rgb(207, 48, 67);
+}
+
+.fall{
+    transform: translateY(8em);
+    opacity: 0;
+}
+
+.finished{
+    text-decoration: line-through;
+    opacity: 0.5;
 }
