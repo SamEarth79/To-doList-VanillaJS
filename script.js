@@ -53,7 +53,6 @@ function deleteCheck(event)
     // Delete
     if(item.classList[0]=="delete-button" )
     {
-        alert("del")
         const todo = item.parentElement.parentElement;
         todo.classList.add("fall");
         setTimeout(function() {
