@@ -11,6 +11,12 @@ todoList.addEventListener("click", deleteCheck)
 // Functions
 function addTodo(event){
     event.preventDefault();
+
+    if(todoField.value==="")
+    {
+        alert("Please fill the field");
+        return;
+    }
     
     const divElement = document.createElement("div");
     {
